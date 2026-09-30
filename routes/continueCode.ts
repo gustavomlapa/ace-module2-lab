@@ -10,6 +10,7 @@ import { challenges } from '../data/datacache'
 import { Op } from 'sequelize'
 
 export function continueCode () {
+  const a=0
   const hashids = new Hashids('this is my salt', 60, 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890')
   return (req: Request, res: Response) => {
     const ids = []
